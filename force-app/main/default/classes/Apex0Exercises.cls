@@ -85,7 +85,7 @@ public class Apex0Exercises {
     
     public static boolean isValid(String[] expression)
     {
-        Stack bracketStack = new Stack(expression.size());
+        Stack bracketStack = new Stack();
         for(Integer i = 0; i < expression.size(); i++)
         {
             // Push to the stack if open bracket
