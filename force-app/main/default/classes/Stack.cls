@@ -2,19 +2,19 @@ public class Stack {
     
     private static final Integer MAX_LENGTH = 100;
     private Integer top=-1;
-    private String[] items = new String[MAX_LENGTH];
+    private Integer[] items = new Integer[MAX_LENGTH];
     
     //items = expression.split('');
     //items.remove(0);
     public Stack(){
         //items = new String[MAX_LENGTH];
-        System.debug('Created Stack of size ' + MAX_LENGTH);
+        //System.debug('Created Stack of size ' + MAX_LENGTH);
         
     }
     
-    public void push(String x)  
+    public void push(Integer x)  
     { 
-        System.debug('entering Stack.push() method with character ' + x);
+        //System.debug('entering Stack.push() method with character ' + x);
         if (top == MAX_LENGTH -1)  
         { 
             System.debug('Stack full'); 
@@ -22,21 +22,21 @@ public class Stack {
         else 
         { 
             items[++top] = x; 
-            System.debug('pushed ' + x + ' to items[' +top+']');
+            //System.debug('pushed ' + x + ' to items[' +top+']');
         } 
     } 
         
-    public String pop()  
+    public Integer pop()  
     { 
         if (top == -1)  
         { 
             System.debug('Underflow error'); 
-            return ''; 
+            return 0; 
         }  
         else 
         { 
-            String element = items[top]; 
-            System.debug('popped ' + element + ' from items['+top+']');
+            Integer element = items[top]; 
+            //System.debug('popped ' + element + ' from items['+top+']');
             top--; 
             return element; 
         } 
@@ -45,11 +45,11 @@ public class Stack {
     public boolean isEmpty()  
     { 
         if(top == -1){
-            System.debug('Stack is empty');
+            //System.debug('Stack is empty');
             return true;
         } 
         else{
-            System.debug('Stack is NOT empty');
+            //System.debug('Stack is NOT empty');
             return false;
         }
 
