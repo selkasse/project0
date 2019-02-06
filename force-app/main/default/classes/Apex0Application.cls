@@ -33,13 +33,13 @@ public class Apex0Application {
             message += 'not valid';
         System.debug('\n'+message);
 
-        Apex0Exercises.updateAccountBalance('A-00010');
+        Apex0Exercises.updateAccountBalance('A-00017');
 
         Apex0Exercises.updateCALeads();
 
         Apex0Exercises.updateAccountSize();
 
-        Apex0Exercises.updateAccountStatus('A-00010');
+        Apex0Exercises.updateAccountStatus('A-00017');
 
         Apex0Exercises.closePastDueOpportunities();
 
